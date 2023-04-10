@@ -70,10 +70,12 @@ body {
   display: flex;
   align-content: center;
   justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .header-page {
   padding-top: 24px;
-  padding-bottom: 22px;
+  padding-bottom: 24px;
 }
 .mobile-menu-open {
   background-color: transparent;
@@ -106,25 +108,50 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: coral;
+  background-color: bisque;
   top: 0;
   left: 0;
   z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--time-animation), visibility var(--time-animation);
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 .mobile-menu-container {
   position: relative;
+  padding-left: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  display: flex;
 }
 .mobile-menu-close-btn {
   background-color: transparent;
   position: absolute;
   top: 24px;
-  right: 24px;
+  right: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 8px;
+}
+.mobile-menu-items {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+.mobile-menu-items:hover,
+.mobile-menu-items:focus {
+  color: var(--pressed-state-color);
 }
 /* .header-page-container { 
   display: flex;
@@ -211,10 +238,7 @@ body {
   bottom: -28px;
 }*/
 /* ==========/HEADER========= */
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 @media screen and (min-width: 428px) {
   .container {
     width: 428px;
