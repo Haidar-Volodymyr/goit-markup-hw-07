@@ -72,8 +72,13 @@ body {
     width: 1200px;
   }
 }
-/* ==========HEADER========= */
-
+.container {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* 0-767px */
 @media screen and (max-width: 767px) {
   .menu {
@@ -172,6 +177,103 @@ body {
   .section-about {
     display: none;
   }
+  .container-team {
+    display: block;
+  }
+  .team {
+    background: var(--light-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .title-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+    color: var(--dark-color);
+  }
+  .list-team {
+    justify-content: center;
+  }
+  .emploees-cards {
+    display: block;
+    background: var(--white-color);
+    margin-bottom: 72px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .emploees-cards-foto {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .corect {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .title-feature-list {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .sub-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .social-list-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-brand-color);
+    transition: background-color var(--time-animation);
+  }
+  .social-list-link:focus,
+  .social-list-link:hover {
+    background-color: var(--pressed-state-color);
+  }
+}
+
+.header-page {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo-page {
+  font-family: var(--second-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+.text-logo {
+  font-family: var(--second-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
 }
 
 /* Mobile menu */
@@ -428,6 +530,76 @@ body {
   .section-about {
     display: none;
   }
+  .container-team {
+    display: block;
+  }
+  .team {
+    background: var(--light-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .title-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark-color);
+    margin-bottom: 72px;
+  }
+  .list-team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .emploees-cards {
+    flex-basis: calc((100%-72px) / 4);
+    background: var(--white-color);
+    margin-bottom: 64px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .corect {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .title-feature-list {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .sub-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .social-list-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-brand-color);
+    transition: background-color var(--time-animation);
+  }
+  .social-list-link:focus,
+  .social-list-link:hover {
+    background-color: var(--pressed-state-color);
+  }
 }
 
 /*  ================ Desktop =================== */
@@ -618,6 +790,10 @@ body {
   .section-about {
     display: block;
   }
+  .desctop-about {
+    display: block;
+  }
+
   .title-about {
     font-weight: 700;
     font-size: 36px;
@@ -627,6 +803,74 @@ body {
     text-align: center;
     color: var(--dark-color);
     margin-bottom: 72px;
+  }
+  .container-team {
+    display: block;
+  }
+  .team {
+    background: var(--light-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .title-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark-color);
+    margin-bottom: 72px;
+  }
+  .list-team {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .emploees-cards {
+    flex-basis: calc((100%-72px) / 4);
+    background: var(--white-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  .corect {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .title-feature-list {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .sub-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .social-list-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-brand-color);
+    transition: background-color var(--time-animation);
+  }
+  .social-list-link:focus,
+  .social-list-link:hover {
+    background-color: var(--pressed-state-color);
   }
 }
 
@@ -821,19 +1065,10 @@ body {
 /* ===========/FEATURE==========*/
 
 /*==========SECTION ABOUT ======*/
-.title-about {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  text-align: center;
-  color: var(--dark-color);
-  margin-bottom: 72px;
-}
+
 /*===================/SECTION ABOUT =====================*/
 /*======================== TEAM=====================*/
-.team {
+/* .team {
   background: var(--light-color);
   padding-top: 120px;
   padding-bottom: 120px;
@@ -886,8 +1121,7 @@ body {
 .social-list-link:focus,
 .social-list-link:hover {
   background-color: var(--pressed-state-color);
-}
-
+}  */
 /* =======================TEAM=====================*/
 /* ==================== Customers============= */
 .customers-section {
