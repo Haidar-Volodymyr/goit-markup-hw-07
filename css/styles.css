@@ -640,7 +640,7 @@ body {
     background: var(--pressed-state-color);
     border-radius: 2px;
     margin: 0 auto;
-    bottom: -44px;
+    bottom: -45px;
   }
   .model-button {
     min-width: 169px;
@@ -1062,7 +1062,7 @@ body {
     background: var(--pressed-state-color);
     border-radius: 2px;
     margin: 0 auto;
-    bottom: -32px;
+    bottom: -33px;
   }
   .model-button {
     min-width: 169px;
@@ -1445,7 +1445,7 @@ body {
 .list-address:not(:last-child) {
   margin-right: 40px;
 }
-.current::before {
+.currentr::before {
   display: block;
   position: absolute;
   content: "";
@@ -1686,6 +1686,17 @@ body {
 
 /* ================= HEADER ===============*/
 
+.currentr::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: var(--pressed-state-color);
+  border-radius: 2px;
+  margin: 0 auto;
+  bottom: -28px;
+}
 .button-filter {
   font-family: inherit;
   font-weight: 500;
@@ -1731,6 +1742,9 @@ body {
 .main-contact:focus {
   transition: transform var(--time-animation);
   color: var(--pressed-state-color);
+}
+.contr-portfolio{
+  display: block;
 }
 .list-team-portfolio {
   display: flex;
