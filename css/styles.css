@@ -482,6 +482,18 @@ body {
   color: var(--dark-color);
 }
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width:767px),
+screen and (min-resolution: 2dppx ) and (max-width: 767px)
+ {
+  .hero{
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+       url(../images/hero/Dark-bg-2x.jpg);
+  }
+}
 /* Mobile menu */
 @media screen and (max-width: 767px) {
   .mobile-menu {
@@ -601,7 +613,27 @@ body {
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
   }
-  .menu {
+  .logo-page {
+  font-family: var(--second-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+.text-logo {
+  font-family: var(--second-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+ .menu {
     display: flex;
     align-items: center;
     margin-left: 120px;
@@ -614,7 +646,7 @@ body {
     letter-spacing: 0.02em;
     transition: color 250ms var(--time-animation);
     position: relative;
-  }
+  }  
   .menu-items:not(:last-child) {
     margin-right: 40px;
   }
@@ -985,6 +1017,21 @@ body {
   height: 24px;
 }
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width:768px),
+screen and (min-resolution: 2dppx ) and (min-width: 768px)
+ {
+  .hero{
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+       url(../images/hero/Dark-bg-tab-2x.jpg);
+  }
+}
+
+/* =================== 1200px+ ======================= */
 
 /*  ================ Desktop =================== */
 @media screen and (min-width: 1200px) {
@@ -1382,6 +1429,18 @@ body {
 }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx ) and (min-width: 1200px)
+ {
+  .hero{
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+       url(../images/hero/people-office-2x.jpg);
+  }
+}
 /* .header-page-container { 
   display: flex;
   align-items: center;
