@@ -607,7 +607,7 @@ screen and (min-resolution: 2dppx ) and (max-width: 767px)
   .header-page {
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #e7e9fc;
+    border-bottom: 1px solid var(--accent-color);
   }
   .logo-page {
   font-family: var(--second-font);
