@@ -139,11 +139,12 @@ body {
   .main-title {
     font-weight: 700;
     font-size: 36px;
+    width: 320px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--white-color);
     text-align: center;
-    padding: 112px 54px;
+    padding: 112px 54px 72px 54px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1195,6 +1196,7 @@ screen and (min-resolution: 2dppx ) and (min-width: 768px)
   }
 .left-footer {
   margin-right: 120px;
+  margin-bottom: 0;
 }
 .subscribe{
   margin-left: 0;
