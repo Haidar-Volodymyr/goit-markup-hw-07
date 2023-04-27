@@ -1255,6 +1255,10 @@ screen and (min-resolution: 2dppx ) and (min-width: 768px)
   .emploees-cards {
     margin-bottom: 0;
   }
+  .flex{
+    display: flex;
+    flex-wrap: nowrap;
+  }
 .left-footer {
   margin-right: 120px;
   margin-bottom: 0;
