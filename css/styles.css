@@ -99,6 +99,8 @@ body {
     width: 100%;
     height: 432px;
     margin-left: auto;
+    padding-top: 112px;
+    padding-bottom: 112px;
     margin-right: auto;
     background: var(--dark-color);
     margin-top: 0px;
@@ -147,9 +149,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--white-color);
     text-align: center;
-    padding: 112px 54px 72px 54px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 72px;
   }
   .section-feature {
     padding-top: 96px;
@@ -287,6 +289,7 @@ body {
   }
   .item-icon-customers {
     width: calc((100% - 16px) / 2);
+    height: 88px;
   }
   .link-customers {
     width: 100%;
@@ -544,6 +547,7 @@ screen and (min-resolution: 2dppx ) and (max-width: 767px)
     align-content: space-between;
     width: 100%;
     padding-left: 40px;
+    padding-bottom: 40px;
     position: relative;
   }
   .mobile-menu-close-btn {
@@ -578,7 +582,7 @@ screen and (min-resolution: 2dppx ) and (max-width: 767px)
   }
   .mobile-menu-tel {
     font-weight: 700;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -596,7 +600,8 @@ screen and (min-resolution: 2dppx ) and (max-width: 767px)
     width: 100%;
     display: flex;
     gap: 56px;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
   }
   .mobile-menu-social-list-items {
     width: 40px;
@@ -762,7 +767,7 @@ screen and (min-resolution: 2dppx ) and (max-width: 767px)
     letter-spacing: 0.02em;
     color: var(--white-color);
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 36px;
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
@@ -975,9 +980,6 @@ screen and (min-resolution: 2dppx ) and (max-width: 767px)
   display: flex;
   gap: 16px;
 }
-.social-media {
-  margin-right: 80px;
-}
 .social-media-title {
   font-weight: 500;
   font-size: 16px;
@@ -989,6 +991,7 @@ screen and (min-resolution: 2dppx ) and (max-width: 767px)
 .flex {
   display: flex;
   flex-wrap: wrap;
+  width: 552px;
 
 }
 .left-footer {
@@ -1103,8 +1106,6 @@ screen and (min-resolution: 2dppx ) and (min-width: 768px)
     margin-right: auto;
   }
   .header-page {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid var(--accent-color);
   }
 .navigation-page{
@@ -1121,6 +1122,8 @@ screen and (min-resolution: 2dppx ) and (min-width: 768px)
     margin-right: 40px;
   }
   .contact {
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-style: normal;
     margin-left: auto;
   }
@@ -1171,6 +1174,7 @@ screen and (min-resolution: 2dppx ) and (min-width: 768px)
   }
   .items-list-feature {
     display: flex;
+    flex-wrap: nowrap;
     gap: 24px;
   }
   .title-feature {
@@ -1182,6 +1186,7 @@ screen and (min-resolution: 2dppx ) and (min-width: 768px)
     margin-bottom: 8px;
   }
   .sub-text-feature {
+    font-weight: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -1192,6 +1197,7 @@ screen and (min-resolution: 2dppx ) and (min-width: 768px)
   }
   .section-feature {
     padding-top: 120px;
+    padding-bottom: 120px;
   }
   .icon-feature {
     display: block;
@@ -1246,12 +1252,15 @@ screen and (min-resolution: 2dppx ) and (min-width: 768px)
     justify-content: center;
     gap: 24px;
   }
+  .emploees-cards {
+    margin-bottom: 0;
+  }
 .left-footer {
   margin-right: 120px;
   margin-bottom: 0;
 }
 .subscribe{
-  margin-left: 0;
+  margin-left: 80px;
 }
 .modal-subscribe {
   width: 264px;
