@@ -1065,7 +1065,7 @@ screen and (min-resolution: 2dppx ) and (max-width: 767px)
   background: var(--pressed-state-color);
   border-radius: 2px;
   margin: 0 auto;
-  bottom: -38px;
+  bottom: -28px;
 }
 .list-picture-portfolio{
   width: 356px;
